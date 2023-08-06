@@ -9,7 +9,7 @@ export default function Checkout({cart, setCart}){
         resetHandler();
     }
     return (
-        <div>
+        <div className="checkout">
             <form onSubmit={(e)=>submitHandler(e)} id="submitForm">
                 <h3>Checkout</h3>
                 <label htmlFor="name">First Name</label>

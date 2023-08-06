@@ -9,12 +9,11 @@ function App () {
   const [cart, setCart] = useState([]);
 
   return (
-    <div>
-      <h1>Hello, world!</h1>
-      <div className="birds"><BirdList bird={ bird } setCart={ setCart }/></div>
+    <main>
       <Cart cart={ cart } setCart={ setCart } />
       <Checkout cart={ cart } setCart={ setCart} />
-    </div>
+      <div className="birds"><BirdList bird={ bird } setCart={ setCart }/></div>
+    </main>
   );
 };
 
